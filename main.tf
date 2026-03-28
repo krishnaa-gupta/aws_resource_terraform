@@ -14,7 +14,7 @@ provider "aws" {
 
 
 provider "aws" {
-    region = "ap-south-1"
-    alias = "hyd"
+    region = "ap-southeast-1"
+    alias = "syg"
   
 }

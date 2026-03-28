@@ -8,7 +8,7 @@ resource "aws_instance" "hyd" {
   instance_type = var.instance_type
   ami           = var.ami
   count         = var.instance_count
-  provider = aws.hyd
+  provider = aws.syg
 }
 
 resource "aws_s3_bucket" "bucket1" {
