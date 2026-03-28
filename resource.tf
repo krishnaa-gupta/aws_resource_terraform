@@ -1,7 +1,14 @@
-resource "aws_instance" "name" {
+resource "aws_instance" "mumbai" {
   instance_type = var.instance_type
   ami           = var.ami
   count         = var.instance_count
+}
+
+resource "aws_instance" "hyd" {
+  instance_type = var.instance_type
+  ami           = var.ami
+  count         = var.instance_count
+  provider = aws.hyd
 }
 
 resource "aws_s3_bucket" "bucket1" {
